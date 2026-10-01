@@ -1,0 +1,45 @@
+{
+  "data": {
+    "n_holdout": 28584,
+    "high_risk_base_rate": 0.09848166806605094,
+    "n_source": 183404,
+    "n_resolved": 142575,
+    "n_train": 113991,
+    "n_test": 28584,
+    "train_high_risk_base_rate": 0.10228877718416367
+  },
+  "model": {
+    "recall_high_risk": 0.9158081705150977,
+    "precision_flagged": 0.35825458588104503,
+    "f1_flagged": 0.5150334631904905,
+    "flag_rate": 0.251749230338651,
+    "workload_reduction": 0.748250769661349,
+    "abstention_rate": 0.11030646515533166,
+    "recall_cancelled": 0.9146431199411332,
+    "recall_cancelled_inferred_4y": 0.9125412541254125,
+    "recall_shelved": 0.9120521172638436,
+    "recall_shelved_inferred_2y": 0.9244935543278084,
+    "confusion_matrix": [
+      [
+        21151,
+        4618
+      ],
+      [
+        237,
+        2578
+      ]
+    ]
+  },
+  "baselines": {
+    "always_low": {
+      "recall": 0.0,
+      "flag_rate": 0.0,
+      "workload_reduction": 1.0
+    },
+    "always_high": {
+      "recall": 1.0,
+      "flag_rate": 1.0,
+      "workload_reduction": 0.0
+    }
+  }
+}
